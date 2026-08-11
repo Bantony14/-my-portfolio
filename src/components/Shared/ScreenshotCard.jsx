@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Monitor, Maximize2 } from "lucide-react";
-import { useInView } from "../../Helper/UseInView";
-import { catColors } from "./data";
+import { useInView } from "../Helper/UseInView";
+import { catColors } from "../Project/RentFlow/data";
 
 const ScreenshotCard = ({ item, index, onOpen }) => {
   const [ref, inView] = useInView();

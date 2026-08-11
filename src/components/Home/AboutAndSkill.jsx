@@ -189,10 +189,12 @@ const AboutAndSkill = () => {
             <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-gradient-to-br from-[#4f7df3]/20 to-[#8da7f7]/10 ring-1 ring-[#4f7df3]/20">
               <Code2 size={18} className="text-[#4f7df3]" />
             </div>
+
             <div>
               <h3 className="text-lg font-bold tracking-tight text-white">
                 Tech Stack
               </h3>
+
               <p className="mt-0.5 text-[11px] tracking-wide text-gray-500">
                 Tools I work with
               </p>
@@ -205,28 +207,35 @@ const AboutAndSkill = () => {
           <div className="grid grid-cols-4 gap-4">
             {techStack.map((tech) => {
               const Icon = tech.icon;
+
               return (
                 <div
                   key={tech.name}
                   className="group/tech flex flex-col items-center gap-2.5"
                 >
                   <div
-                    className="flex h-14 w-14 items-center justify-center rounded-xl border border-white/[0.04] bg-white/[0.02] transition-all duration-400 group-hover/tech:scale-110 group-hover/tech:border-opacity-40"
+                    className="relative flex h-14 w-14 items-center justify-center rounded-xl border border-white/[0.04] bg-white/[0.02] transition-all duration-300 group-hover/tech:border-white/20"
                     style={{
                       "--hover-color": tech.color,
                     }}
                   >
                     {/* outer glow on hover */}
                     <div
-                      className="absolute inset-0 rounded-xl opacity-0 blur-md transition-opacity duration-400 group-hover/tech:opacity-20"
-                      style={{ backgroundColor: tech.color }}
+                      className="pointer-events-none absolute inset-0 rounded-xl opacity-0 blur-md transition-opacity duration-300 group-hover/tech:opacity-20"
+                      style={{
+                        backgroundColor: tech.color,
+                      }}
                     />
+
                     <Icon
                       size={26}
-                      className="relative z-10 transition-all duration-300"
-                      style={{ color: tech.color }}
+                      className="relative z-10 transition-transform duration-300 group-hover/tech:scale-110"
+                      style={{
+                        color: tech.color,
+                      }}
                     />
                   </div>
+
                   <span className="text-center text-[11px] font-medium text-gray-500 transition-colors duration-300 group-hover/tech:text-gray-300">
                     {tech.name}
                   </span>
@@ -240,6 +249,7 @@ const AboutAndSkill = () => {
             <span className="text-[11px] uppercase tracking-widest text-gray-600">
               Technologies
             </span>
+
             <span className="text-sm font-semibold text-[#4f7df3]">
               {techStack.length}
             </span>

@@ -1,5 +1,5 @@
 import { X, ChevronLeft, ChevronRight } from "lucide-react";
-import { catColors } from "./data";
+import { catColors } from "../Project/RentFlow/data";
 
 const Lightbox = ({ images, currentIndex, onClose, onPrev, onNext }) => {
   const current = images[currentIndex];
