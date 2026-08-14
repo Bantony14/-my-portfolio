@@ -45,7 +45,7 @@ const Navbar = () => {
       <div className="flex items-center gap-3">
         {/* Download CV Button */}
         <a
-          href="/resume.pdf"
+          href="/Singh-Bantony-Upendra-Resume.pdf"
           download="Singh-Bantony-Upendra-Resume.pdf"
           className="flex items-center gap-2.5 bg-[#111827] text-[#c5cee0] border border-[#1c2640] px-4 py-2 rounded-full text-[0.85rem] font-medium cursor-pointer transition-all duration-300 hover:bg-[#1a2338] hover:border-[#2a3a5c] hover:text-white"
         >
