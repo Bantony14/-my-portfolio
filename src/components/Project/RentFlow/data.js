@@ -80,8 +80,8 @@ export const projectInfo = {
     },
   ],
   links: {
-    live: "https://rent-flow-by-bantony.vercel.app/",
-    github: "https://github.com/Bantony14/rent-flow",
+    live: "https://rent-flow-management-by-bantony.vercel.app/",
+    github: "https://github.com/Bantony14/Rent-Flow-Management",
   },
 };
 

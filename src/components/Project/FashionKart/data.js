@@ -75,7 +75,7 @@ export const projectInfo = {
   ],
 
   links: {
-    live: "https://your-fashionkart-url.vercel.app/",
+    live: "https://fashion-kart-by-bantony.vercel.app/",
     github: "https://github.com/Bantony14/fashion-kart",
   },
 };
