@@ -8,10 +8,12 @@ const HeroSection = () => {
   const [ref, inView] = useInView();
 
   const socials = [
-    { label: "GitHub", icon: FaGithub, link: "#" },
-    { label: "LinkedIn", icon: FaLinkedinIn, link: "#" },
-    { label: "Twitter", icon: FaTwitter, link: "#" },
-    { label: "Instagram", icon: FaInstagram, link: "#" },
+    { label: "GitHub", icon: FaGithub, link: "https://github.com/Bantony14" },
+    {
+      label: "LinkedIn",
+      icon: FaLinkedinIn,
+      link: "https://www.linkedin.com/in/bantony-singh-2a7717428/?utm_source=chatgpt.com",
+    },
   ];
 
   return (
